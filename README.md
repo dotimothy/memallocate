@@ -1,2 +1,3 @@
 # memallocate
- A Web Program Which Tries to Allocate All of Your Memory (Chrome is the best at this lol)
+## A Useless Web Program That Tries to Allocate All of Your Memory (Chrome is the best at this lol)
+Made by Timothy Do
