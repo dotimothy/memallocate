@@ -1,4 +1,4 @@
 var txt = "a";
-while(txt.length < (2**32)) {
+while(txt.length < (2**53-1)) {
 	txt = txt + "a";
 }
