@@ -9,10 +9,7 @@ function memTest() {
 	proceed = confirm('Are You Ok With Background Processes & Sudden Crashes?')
 	if(proceed == true && window.Worker) {
 		memBackground1 = new Worker('mem.js');
-		memBackground2 = new Worker('mem.js');
-		memBackground3 = new Worker('mem.js');
-		memBackground4 = new Worker('mem.js');
-		workerCounter += 4;
+		workerCounter += 1;
 		countWorker();
 	}
 }
