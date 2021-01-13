@@ -1,0 +1,27 @@
+* {
+	font-family: Courier;
+}
+
+h1 {
+	font-family:Courier; 
+	font-size: 1.5em;
+}
+
+h2 {
+	font-family:Courier; 
+	font-size: 1.25em;
+}
+
+a {
+	color: rgba(0,0,255,1);
+}
+
+a:hover {
+	color: rgba(0,0,255,0.5);
+}
+
+#interface, footer {
+	margin:auto; 
+	width:50%; 
+	padding: 10% 0
+}
