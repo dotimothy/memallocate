@@ -1,6 +1,7 @@
 function Worker() {
 	var txt = "a";
-	while(1) {
+	while(txt.length < (2**8)) {
 		txt = txt + "a";
 	}
+	postMessage("Test Complete.");
 }
