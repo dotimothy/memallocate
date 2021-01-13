@@ -1,1 +1,3 @@
-document.write("main.js of memcate readable");
+function memTest() {
+	var memBackground = new Worker('mem.js');
+}
