@@ -10,7 +10,7 @@ function countWorker() {
 function memTest() {
 	proceed = confirm('Are You Ok With Background Processes & Sudden Crashes?')
 	if(proceed == true && window.Worker) {
-		add =  prompt("How Many Webworkers to Add",1);
+		add =  prompt("How Many Webworkers to Add (DO NOT ADD MORE THAN 3)",1);
 		for(var i = 0; i < add; i++)
 		{
 			memBackground = new Worker('mem.js');
