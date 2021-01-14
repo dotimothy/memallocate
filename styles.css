@@ -27,3 +27,29 @@ a:hover {
 	width:50%; 
 	padding: 1% 0
 }
+
+.chrome1 {
+	animation: spincw .3s infinite linear;
+}
+
+@keyframes spinccw {
+	0% {
+		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.chrome2 {
+	animation: spinccw .3s infinite linear;
+}
+
+@keyframes spincw {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
