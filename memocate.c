@@ -3,6 +3,8 @@
 /* Author: TD */
 
 #include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
@@ -16,17 +18,43 @@ int main(void)
 	{
 		temp[counter] = letter[counter];
 	}
-	//memocate part :)
-	while(size > 0)
+	int mode;
+	printf("(0) Intensive or (1) Safe: ");
+	scanf("%d",&mode);
+	if(!mode) //Intensive Mode O(n^2)
 	{
+		printf("Intensive Mode O(n^2)\n");
+		//initial intialization of strings
 		for(counter = 0; counter < 26; counter++)
 		{
 			*temp[counter] = counter + 97;
-			temp[counter]++;
 		}
-		size--;
+		while(size > 0)
+		{
+			for(counter = 0; counter < 26; counter++)
+			{
+				char *clone = malloc(size);
+				strcpy(clone,temp[counter]);
+				strcat(temp[counter],clone);
+				free(clone);
+			}	
+		}
+
 	}
-	//freeing
+	else //Linear Safe Mode O(n) 
+	{
+		printf("Safe Mode O(n)\n");
+		while(size > 0)
+		{
+			for(counter = 0; counter < 26; counter++)
+			{
+				*temp[counter] = counter + 97;
+				temp[counter]++;
+			}
+			size--;
+		}
+	}
+	//freeing the pointers
 	for(counter = 0; counter < 26; counter++)
 	{
 		free(letter[counter]); 
