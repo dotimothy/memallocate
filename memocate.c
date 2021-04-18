@@ -2,7 +2,6 @@
 /* Disclaimer: I am not responsible for anything that happens. You are warned */
 /* Author: TD */
 
-#include <stdio.h>
 #include <stdlib.h>
 
 int main(void)
@@ -23,7 +22,6 @@ int main(void)
 		for(counter = 0; counter < 26; counter++)
 		{
 			*temp[counter] = counter + 97;
-			//printf("%c",*temp[counter]);
 			temp[counter]++;
 		}
 		size--;
