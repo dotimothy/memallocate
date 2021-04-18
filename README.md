@@ -3,4 +3,5 @@
 ### Supported Languages: Javascript, C, Python (more to be added)
 #### Made by Timothy Do
 # Use At Your Own Discretion: Here's the [Web Demo](https://dotimothy.github.io/memocate)
+<img width="40%" src="https://dotimothy.github.io/memocate/eat.gif">
 
