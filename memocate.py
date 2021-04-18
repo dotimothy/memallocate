@@ -4,6 +4,15 @@
 
 #initialization
 a = "a"
+mode = input("(0) Intensive or (1) Safe: ")
 #Storing string to memory until overflow.
-while(1):
-	a = a + a
+#Concatenating Runtime: O(n)
+if(mode):
+	print("Safe Mode O(n)")
+	while(1):
+		a = a + "a"
+#Concatenating Runtime O(n^2)
+else: 
+	print("Intensive Mode O(n^2)")
+	while(1):
+		a = a + a
