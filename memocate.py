@@ -7,7 +7,7 @@ a = "a"
 mode = input("(0) Intensive or (1) Safe: ")
 #Storing string to memory until overflow.
 #Concatenating Runtime: O(n)
-if(mode):
+if(int(mode)):
 	print("Safe Mode O(n)")
 	while(1):
 		a = a + "a"
